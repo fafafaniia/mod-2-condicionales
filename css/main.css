@@ -1,0 +1,55 @@
+*{
+   
+}
+
+.ex-1-title{
+    color: purple;
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.whoAreYou{
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.user__name{
+    color: purple;
+}
+
+.ex-3{
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.ex-3-title{
+    color: purple;
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}

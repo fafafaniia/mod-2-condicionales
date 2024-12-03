@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Ejercicio control de acceso</h1>
+    <h1 class="ex-1-title">Ejercicio control de acceso</h1>
     <form class="whoAreYou">
         <input type="text" name="name" class="js_access" id="name">
         <input type="submit" value="Guardar" class="js_btn">
-        <p class="js_nameParagraph"></p>
+        <p class="js_nameParagraph ex-1-paragraph"></p>
     </form>
 
     <div class="user">
@@ -19,12 +22,15 @@
         <img class="js_usAv user__avatar" src="" alt="Avatar" width="300px"/>
     </div>
 
-    <h1>Conversor de Edad de Perros a Humanos</h1>
-    <label for="dogAge">Edad del perro (años): </label>
-    <input type="number" class="dogAge" placeholder="Introduce la edad del perro">
-    <button class="convertButton">Convertir</button>
+   
+    <h1 class="ex-3-title">Conversor de Edad de Perros a Humanos</h1>
+    <div class="ex-3">
+        <label for="dogAge">Edad del perro (años): </label>
+        <input type="number" class="dogAge" placeholder="Introduce la edad del perro">
+        <button class="converter">Convertir</button>
     
-    <p class="result"></p>
+        <p class="result"></p>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
