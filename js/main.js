@@ -49,24 +49,26 @@ const usAv = document.querySelector('.user__avatar') ;
 usAv.src = userAvatar || DEFAULT_AVATAR;
 
 // Ejercicio 4. Conversor de edad de perro a humano 
-const convertButton = document.querySelector('convertButton');
-const dogAgeInput = document.querySelector('dogAge');
-const resultParagraph = document.querySelector('result');
+const convertButton = document.querySelector('.convertButton');
+const dogAgeInput = document.querySelector('.dogAge');
+const resultParagraph = document.querySelector('.result');
 
 convertButton.addEventListener('click', (ev) => {
   ev.preventDefault()
   const edadPerro = parseInt(dogAgeInput.value);
   if (isNaN(edadPerro) || edadPerro <= 0) {
-    resultParagraph.innerHTML = "Por favor, introduce una edad válida.";}
-})
+    resultParagraph.innerHTML = "Por favor, introduce una edad válida.";
+  } else {
+    let edadHumana;
 
-let edadHumana;
-
-if (edadPerro === 1) {
-    edadHumana = 15;
-} else if (edadPerro === 2) {
-    edadHumana = 15 + 9; // Primer año + segundo año
-} else if (edadPerro >= 3) {
-    // Primer año = 15 años, segundo año = 9 años, el resto = 5 años por cada año adicional
-    edadHumana = 15 + 9 + (edadPerro - 2) * 5;
+    if (edadPerro === 1) {
+        edadHumana = 15;
+    } else if (edadPerro === 2) {
+        edadHumana = 15 + 9; // Primer año + segundo año
+    } else if (edadPerro >= 3) {
+        // Primer año = 15 años, segundo año = 9 años, el resto = 5 años por cada año adicional
+        edadHumana = 15 + 9 + (edadPerro - 2) * 5;
+    }
+    resultParagraph.innerHTML = `La edad humana equivalente es: ${edadHumana} años.`;
 }
+});
