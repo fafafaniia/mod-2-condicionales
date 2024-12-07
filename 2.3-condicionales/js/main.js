@@ -72,3 +72,5 @@ convertButton.addEventListener('click', (ev) => {
     resultParagraph.innerHTML = `La edad humana equivalente es: ${edadHumana} años.`;
 }
 });
+
+
